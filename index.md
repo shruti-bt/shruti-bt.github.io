@@ -12,7 +12,7 @@ I am currently working on particle jets classification and anomaly detection in 
 
 I completed my Master and Bachelor in Physics from [Gondwana University](https://unigug.ac.in/) (Gadchiroli, India) with the master thesis titled "Determination of thermo-acoustical parameters of aqueous zinc sulphate at different temperatures".
 
-Follow me on below platform to get latest updates on my work.
+Follow me on below platforms to get latest updates on my work.
 
 
 <div class="body-social sidebar-social">
