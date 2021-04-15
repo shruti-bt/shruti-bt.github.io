@@ -6,13 +6,13 @@ title: About
 Hi there!
 
 
-My name is Shruti Borkute, I am interested in the field of machine learning and physics, and want to apply my machine learning algorithms to solve the complex problems in particle physics. I am currently working as a freelancer in machine learning. Prior to my freelancing carrer I completed my master studies from [Gondwana University](https://unigug.ac.in/) (Gadchiroli, India).
+My name is Shruti Borkute, I am interested in the field of machine learning and physics, and want to apply my machine learning algorithms to solve the complex problems in particle physics. I am currently working as a freelancer in machine learning.
 
-<!-- My work consists of a wide range of topics such as computer vision, generative modelling, image segmentation, object detection, NLP, OCR, time series analysis, etc. My current focus is continuous learning to overcome the problem of 'catastrophic forgetting' using the statistical method and in speech analysis. 
+I am currently working on particle jets classification and anomaly detection in high energy physics using machine learning. The projects are listed on the [project page](../projects). 
 
-Before my current position, I completed my bachelor studies from [SGGS Institute of Engineering and Technology](https://www.sggs.ac.in/) (Nanded, India). I was a research intern at Nanyang Technological University ([NTU](https://www.ntu.edu.sg/)), Singapore with Prof. [Lam Siew Kei](https://personal.ntu.edu.sg/assklam/) and the Indian Institute of Technology [IIT](https://www.iitrpr.ac.in) (Ropar, India) with Prof. [Subrahmanyam Murala](https://www.iitrpr.ac.in/electrical/subbumurala). Also, I received a full-time offer from NTU Singapore but due to the COVID-19 pandemic, my application got revoked. 
+I completed my Master and Bachelor in Physics from [Gondwana University](https://unigug.ac.in/) (Gadchiroli, India) with the master thesis titled "Determination of thermo-acoustical parameters of aqueous zinc sulphate at different temperatures".
 
-I am looking for a PhD position in machine learning, feel free to contact me to figure of if we are a good fit together. -->
+Please follow me on below social media for my ongoing work.
 
 
 <div class="body-social sidebar-social">
@@ -28,7 +28,6 @@ I am looking for a PhD position in machine learning, feel free to contact me to 
 <!-- 
 Photo credits: Side background picture by [Clay Banks](https://www.instagram.com/clay.banks/?utm_medium=referral&utm_source=unsplash)
 {:.message} -->
-
 
 
 <style type="text/css">
