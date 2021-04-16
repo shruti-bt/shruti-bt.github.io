@@ -19,7 +19,7 @@ Follow me on below platforms to get latest updates on my work.
   <ul>
     <!-- <li> <a href="https://scholar.google.co.uk/citations?hl=en&amp;user=40lh_7kAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" title="Google Scholar" class="no-mark-external" target="_blank"> <span class="icon-googlescholar"></span> <span aria-hidden="true">Google Scholar </span><span class="sr-only">Abir Saha's Google Scholar page</span></a></li> -->
     <li> <a href="https://twitter.com/shruti_borkute" title="Twitter" class="no-mark-external" target="_blank"> <span class="icon-twitter"></span> <span aria-hidden="true">Twitter </span><span class="sr-only">Vishal Thengane's Twitter profile</span></a></li>
-    <li> <a href="https://www.linkedin.com/in/shruti_borkute-" title="LinkedIn" class="no-mark-external" target="_blank"> <span class="icon-linkedin2"></span> <span aria-hidden="true">LinkedIn </span><span class="sr-only">Vishal Thengane's LinkedIn profile</span></a></li>
+    <li> <a href="https://www.linkedin.com/in/shruti_borkute" title="LinkedIn" class="no-mark-external" target="_blank"> <span class="icon-linkedin2"></span> <span aria-hidden="true">LinkedIn </span><span class="sr-only">Vishal Thengane's LinkedIn profile</span></a></li>
     <li> <a href="https://instagram.com/shruti_borkute" title="Instagram" class="no-mark-external" target="_blank"> <span class="icon-instagram"></span> <span aria-hidden="true">Instagram </span><span class="sr-only">Vishal Thengane's Instagram profile</span></a></li>
   </ul>
 </div>
