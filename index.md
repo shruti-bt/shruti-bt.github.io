@@ -10,7 +10,7 @@ My name is Shruti Borkute, I am interested in the field of machine learning and 
 
 I am currently working on particle jets classification and anomaly detection in high energy physics using machine learning. The projects are listed on the [project page](projects). 
 
-I completed my Master and Bachelor in Physics from [Gondwana University](https://unigug.ac.in/) (Gadchiroli, India) with the master thesis titled "Determination of thermo-acoustical parameters of aqueous zinc sulphate at different temperatures".
+I completed my Master and Bachelor in Physics from [Gondwana University](https://unigug.ac.in/) (Gadchiroli, India) with the master thesis titled "Hunting Exoplanets with Deep Learning".
 
 Follow me on below platforms to get latest updates on my work.
 
