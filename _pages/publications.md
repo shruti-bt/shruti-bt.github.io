@@ -57,11 +57,13 @@ posters:
 
 <!-- # Publications -->
 
-## Papers
+<div class="pub-page">
+  <h3>Papers</h3>
 
-{% include publications/section.html items=page.papers kind="paper" empty_label="papers" %}
+  {% include publications/section.html items=page.papers kind="paper" empty_label="papers" %}
 
-## Posters
+  <h3>Posters</h3>
 
-{% include publications/section.html items=page.posters kind="poster" empty_label="posters" %}
+  {% include publications/section.html items=page.posters kind="poster" empty_label="posters" %}
+</div>
 
