@@ -22,6 +22,7 @@ $font-family-heading: {{ site.font_heading | default:"Roboto Slab, Helvetica, Ar
 $font-family:         {{ site.font         | default:"Noto Sans, Helvetica, Arial, sans-serif"   }};
 $theme-color:         {{ site.theme_color  | default:'#193747' }};
 
+
 @import "variables";
 @import "my-variables";
 @import "mixins";
@@ -29,6 +30,7 @@ $theme-color:         {{ site.theme_color  | default:'#193747' }};
 @import "reboot-mod";
 
 {% unless site.hydejack.no_inline_css or jekyll.environment == 'development' %}
+
   @import "pooleparty/__link__/base";
   @import "pooleparty/__link__/type";
   @import "pooleparty/__link__/table";
@@ -65,6 +67,7 @@ $theme-color:         {{ site.theme_color  | default:'#193747' }};
 
   @import "my-style";
 {% else %}
+
   @import "pooleparty/_base.pre.scss";
   @import "pooleparty/_type.pre.scss";
   @import "pooleparty/_table.pre.scss";

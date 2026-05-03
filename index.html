@@ -1,0 +1,9 @@
+---
+layout: page
+title: About
+permalink: /
+---
+
+{% capture about_raw %}{% include_relative _pages/about.md %}{% endcapture %}
+{% assign about_body = about_raw | split: '---' | last %}
+{{ about_body | markdownify }}

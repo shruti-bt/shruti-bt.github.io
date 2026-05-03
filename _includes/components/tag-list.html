@@ -10,8 +10,16 @@
   {% assign content = start_with %}
   {% for tag_slug in tags %}
     {% capture iter_separator %}{% if forloop.last %}{{ end_with }}{% else %}{{ separator }}{% endif %}{% endcapture %}
-
-    {% assign tag = meta | where: "slug", tag_slug | first %}
+    {% assign normalized_tag_slug = tag_slug | slugify %}
+    {% assign tag = nil %}
+    {% for item in meta %}
+      {% assign item_slug_source = item.slug | default:item.title | default:item.name %}
+      {% assign normalized_item_slug = item_slug_source | slugify %}
+      {% if normalized_item_slug == normalized_tag_slug %}
+        {% assign tag = item %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
 
     {% if tag %}
       {% capture content_temp %}{{ content }}<a href="{{ tag.url | relative_url }}" class="flip-title">{{ tag.title }}</a>{{ iter_separator }}{% endcapture %}

@@ -72,8 +72,9 @@ copyright:             © 2021 Shruti Borkute. All rights reserved.
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              10
-paginate_path:         /page-:num/
+# Disabled because the homepage now uses `_pages/about.md`.
+# paginate:              10
+# paginate_path:         /page-:num/
 
 
 # Customizaton
@@ -225,8 +226,8 @@ hydejack:
 # ========================================================================================
 
 collections:
-  featured_categories:
-    permalink:         /:name/
+  pages:
+    permalink:         /:path/
     output:            true
 
   featured_tags:
@@ -243,6 +244,7 @@ collections:
 
 exclude:
   - vendor
+  - README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
@@ -266,7 +268,6 @@ plugins:
   - jekyll-feed
   - jekyll-optional-front-matter
   - jekyll-paginate
-  - jekyll-readme-index
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-seo-tag
@@ -318,10 +319,6 @@ social:
 optional_front_matter:
   remove_originals:    true
 
-readme_index:
-  remove_originals:    true
-  with_frontmatter:    true
-
 relative_links:
   collections:         true
 
@@ -353,3 +350,6 @@ compress_html:
 
 sass:
   style:               compressed
+  quiet_deps:          true
+  silence_deprecations:
+    - import
