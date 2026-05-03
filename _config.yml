@@ -66,7 +66,7 @@ menu:
 #     url:               /cookies-policy/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021 Shruti Borkute. All rights reserved. 
+copyright:             © 2026 Shruti Borkute. All rights reserved. 
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -83,32 +83,32 @@ permalink:             /:categories/:year-:month-:day-:title/
 # Sidebar image and theme color of the site.
 accent_image:          /assets/img/sidebar-bg2.jpg
 # accent_image:          none
-accent_color:          rgb(95, 7, 166) #rgb(207,128,83)
+accent_color:          '#B05A26'
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
-theme_color:           rgb(95, 7, 166) # to change the sidebar background color
+theme_color:           '#B05A26'
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
-google_fonts:          Nunito+Sans:600|Nunito+Sans:400,400i,700,700i
+google_fonts:          'Inter:400,500,600,700|Manrope:500,600,700,800'
 
 # The text font. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font:                  Nunito Sans, Helvetica, Arial, sans-serif
+font:                  'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 # To change font-weight, see _sass/variables.scss
-font_heading:          Nunito Sans, Helvetica, Arial, sans-serif
+font_heading:          'Manrope, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif'
 
 defaults:
   - scope:
       path:            hyde
     values:
-      accent_color:    rgb(95, 7, 166)
+      accent_color:    '#B05A26'
       accent_image:
-        background:    rgb(95, 7, 166)
+        background:    '#B05A26'
         overlay:       false
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
