@@ -2,6 +2,16 @@ html {
   font-size: 99%;
 }
 
+::selection {
+  background: rgba(176, 90, 38, 0.2);
+  color: #111;
+}
+
+::-moz-selection {
+  background: rgba(176, 90, 38, 0.2);
+  color: #111;
+}
+
 .pub-list {
   list-style: none;
   padding: 0;
@@ -34,7 +44,7 @@ html {
 }
 
 .pub-title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.35;
   margin: 0 0 0.18rem;

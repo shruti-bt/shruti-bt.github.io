@@ -54,11 +54,11 @@
 }
 
 ::selection {
-  color: #fff;
-  background: {{ color }};
+  color: #111;
+  background: color-mix(in srgb, {{ color }} 20%, white);
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: {{ color }};
+  color: #111;
+  background: color-mix(in srgb, {{ color }} 20%, white);
 }
