@@ -9,56 +9,59 @@ accent_color: rgb(38,139,210)
 accent_image:
   background: rgb(32,32,32)
   overlay:    false
+  
+papers:
+  - paper: 'MERLION: Marine ExploRation with Language guIded Online iNformative Visual Sampling and Enhancement'
+    venue: International Conference on Robotics & Automation (ICRA)
+    authors: Shrutika Thengane, Marcel Bartholomeus Prasetyo, Yu Xiang Tan, Malika Meghjani
+    url: https://arxiv.org/pdf/2503.06953
+    website:
+    bibtex:
+    code:
+    year: 2025
+    note:
+
+  - paper: 'WaveDiff: Underwater Visual Data Enhancement with Wavelet-Accelerated Diffusion'
+    venue: OCEANS 2024-Halifax
+    authors: Shrutika Thengane, Yu Xiang Tan, Marcel Bartholomeus Prasetyo, Malika Meghjani
+    url: https://ieeexplore.ieee.org/abstract/document/10753857
+    website:
+    bibtex:
+    code:
+    year: 2024
+    note:
+
+  - paper: Online Informative Sampling Using Semantic Features in Underwater Environments
+    venue: OCEANS 2024-Singapore
+    authors: Shrutika Thengane, Yu Xiang Tan, Marcel Bartholomeus Prasetyo, Malika Meghjani
+    url: https://ieeexplore.ieee.org/abstract/document/10682405
+    website:
+    bibtex:
+    code:
+    year: 2024
+    note:
+
+posters:
+  - paper: Automated Ship Hull Inspection
+    venue: Singapore Maritime Week
+    authors: Marcel Bartholomeus Prasetyo, Shrutika Thengane, Hoo Jun Jie, Malika Meghjani
+    url:
+    website:
+    bibtex:
+    code:
+    year: 2026
+    note:
 ---
 
-<!-- This site under construction.
-Sorry for the inconvenience caused. -->
+<!-- Add new publication entries directly in this file front matter (`papers` and `posters`). -->
 
-# Publications
+<!-- # Publications -->
 
 ## Papers
-{: style="margin-top:2rem"}
 
-MERLION: Marine ExploRation with Language guIded Online iNformative Visual Sampling and Enhancement [\[PDF\]](https://arxiv.org/pdf/2503.06953)
-{:.lead style="margin-bottom: 0"}
-Shrutika Shruti Thengane, Marcel Bartholomeus Prasetyo, Yu Xiang Tan, Malika Meghjani
-{:.faded style="margin-bottom: 0"}
-Conference: ICRA, 2014
-{: style="margin-top:0; margin-bottom:0"}
-[arXiv:1811.12932](https://arxiv.org/pdf/2503.06953)
-{: style="margin-top:0"}
-
-WaveDiff: Underwater Visual Data Enhancement with Wavelet-Accelerated Diffusion
-{:.lead style="margin-bottom: 0"}
-Shrutika Shruti Thengane, Yu Xiang Tan, Marcel Bartholomeus Prasetyo, Malika Meghjani
-{:.faded style="margin-bottom: 0"}
-Conference: OCEANS 2024-Halifax
-{: style="margin-top:0; margin-bottom:0"}
-[arXiv:1811.12932](https://ieeexplore.ieee.org/abstract/document/10753857)
-{: style="margin-top:0"}
-
-Online Informative Sampling Using Semantic Features in Underwater Environments
-{:.lead style="margin-bottom: 0"}
-Shrutika Shruti Thengane, Yu Xiang Tan, Marcel Bartholomeus Prasetyo, Malika Meghjani
-{:.faded style="margin-bottom: 0"}
-Conference: OCEANS 2024-Singapore
-{: style="margin-top:0; margin-bottom:0"}
-[arXiv:1811.12932](https://ieeexplore.ieee.org/abstract/document/10682405)
-{: style="margin-top:0"}
-
+{% include publications/section.html items=page.papers kind="paper" empty_label="papers" %}
 
 ## Posters
-{: style="margin-top:2rem"}
 
-Automated Ship Hull Inspection
-[\[Poster\]](?)
-{:.lead style="margin-bottom: 0"}
-Marcel Bartholomeus Prasetyo, Shrutika Shruti Thengane, Hoo Jun Jie, Malika Meghjani
-{:.faded style="margin-bottom: 0"}
-Conference: Singapore Maritime Week, 2026
-{: style="margin-top:0; margin-bottom:0"}
-
-
-
-
+{% include publications/section.html items=page.posters kind="poster" empty_label="posters" %}
 

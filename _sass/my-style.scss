@@ -2,6 +2,70 @@ html {
   font-size: 99%;
 }
 
+.pub-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-entry {
+  margin: 0 0 1.15rem;
+  padding: 0;
+}
+
+.pub-title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.01em;
+}
+
+.pub-authors {
+  margin: 0 0 0.2rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #353535;
+}
+
+.pub-meta {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #767676;
+}
+
+.pub-boxes {
+  display: flex;
+  gap: 0.5em;
+  margin: 0.5em 0 0.85em;
+  flex-wrap: wrap;
+}
+
+.pub-box {
+  display: inline-block;
+  padding: 0.2em 0.75em;
+  border-radius: 6px;
+  background: #fff;
+  color: #b05a26;
+  font-size: 0.78em;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #e7d8cb;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.pub-box:hover {
+  background: #fff6ee;
+  border-color: #dcbba6;
+}
+
+.pub-note {
+  margin-top: 0.2rem;
+  color: #707070;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
 .dl-table {
   a {
     padding-bottom: 0.4rem;
