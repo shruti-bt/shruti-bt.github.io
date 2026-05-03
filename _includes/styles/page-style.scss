@@ -7,7 +7,7 @@
 // 0
 .content a:not(.btn) {
   color: {{ color }};
-  border-color: fade-out({{ color }}, 0.8);
+  border-color: rgba({{ color }}, .2);
 }
 
 // 1
@@ -35,8 +35,8 @@
 // 5
 .btn-primary:hover, .btn-primary.hover {
   color: #fff;
-  background-color: darken({{ color }}, 7.5%);
-  border-color: darken({{ color }}, 7.5%);
+  background-color: mix(black, {{ color }}, 7.5%);
+  border-color: mix(black, {{ color }}, 7.5%);
 }
 
 // 6
@@ -49,8 +49,8 @@
 // 7
 .btn-primary:active, .btn-primary.active {
   color: #fff;
-  background-color: darken({{ color }}, 7.5%);
-  border-color: darken({{ color }}, 7.5%);
+  background-color: mix(black, {{ color }}, 7.5%);
+  border-color: mix(black, {{ color }}, 7.5%);
 }
 
 ::selection {

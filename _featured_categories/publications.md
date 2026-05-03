@@ -11,53 +11,54 @@ accent_image:
   overlay:    false
 ---
 
-This site under construction.
-Sorry for the inconvenience caused.
+<!-- This site under construction.
+Sorry for the inconvenience caused. -->
 
-<!-- # Publications -->
+# Publications
 
-<!-- ## Papers
+## Papers
 {: style="margin-top:2rem"}
 
-Denoising adversarial autoencoders: classifying skin lesions using limited labelled training data [\[PDF\]](https://digital-library.theiet.org/content/journals/10.1049/iet-cvi.2018.5243)
+MERLION: Marine ExploRation with Language guIded Online iNformative Visual Sampling and Enhancement [\[PDF\]](https://arxiv.org/pdf/2503.06953)
 {:.lead style="margin-bottom: 0"}
-Antonia Creswell, Alison Pouplin and Anil Bharath
+Shrutika Shruti Thengane, Marcel Bartholomeus Prasetyo, Yu Xiang Tan, Malika Meghjani
 {:.faded style="margin-bottom: 0"}
-IET Computer Vision, 2018
+Conference: ICRA, 2014
 {: style="margin-top:0; margin-bottom:0"}
-[arXiv:1811.12932](https://arxiv.org/abs/1801.00693.pdf)
+[arXiv:1811.12932](https://arxiv.org/pdf/2503.06953)
 {: style="margin-top:0"}
 
-Approximating the solution to wave propagation using deep neural networks
+WaveDiff: Underwater Visual Data Enhancement with Wavelet-Accelerated Diffusion
 {:.lead style="margin-bottom: 0"}
-Wilhelm Sorteberg, Stef Garasto, Alison Pouplin, Chris Cantwell and Anil Bharath
+Shrutika Shruti Thengane, Yu Xiang Tan, Marcel Bartholomeus Prasetyo, Malika Meghjani
 {:.faded style="margin-bottom: 0"}
-Workshop: Modeling the Physical World: Perception, Learning, and Control at NeurIPS, 2018
+Conference: OCEANS 2024-Halifax
 {: style="margin-top:0; margin-bottom:0"}
-[arXiv:1811.12932](https://arxiv.org/abs/1812.01609.pdf)
+[arXiv:1811.12932](https://ieeexplore.ieee.org/abstract/document/10753857)
 {: style="margin-top:0"}
+
+Online Informative Sampling Using Semantic Features in Underwater Environments
+{:.lead style="margin-bottom: 0"}
+Shrutika Shruti Thengane, Yu Xiang Tan, Marcel Bartholomeus Prasetyo, Malika Meghjani
+{:.faded style="margin-bottom: 0"}
+Conference: OCEANS 2024-Singapore
+{: style="margin-top:0; margin-bottom:0"}
+[arXiv:1811.12932](https://ieeexplore.ieee.org/abstract/document/10682405)
+{: style="margin-top:0"}
+
 
 ## Posters
 {: style="margin-top:2rem"}
 
-Empirical comparison of pretrained models for the classification of retinal OCT images
-[\[Poster\]](https://drive.google.com/file/d/1OjQRuIo2IQFFRWizP-2iGuweDZ9vgDw0/view?usp=sharing)
+Automated Ship Hull Inspection
+[\[Poster\]](?)
 {:.lead style="margin-bottom: 0"}
-Alison Pouplin and Anil Bharath
+Marcel Bartholomeus Prasetyo, Shrutika Shruti Thengane, Hoo Jun Jie, Malika Meghjani
 {:.faded style="margin-bottom: 0"}
-Workshop: Women in Machine Learning at NeurIPS, 2018
+Conference: Singapore Maritime Week, 2026
 {: style="margin-top:0; margin-bottom:0"}
 
-Loss functions in imbalanced classification [\[Poster\]](https://drive.google.com/file/d/1qEV63nPwcGs7AhAL3TWeswMIKHBhtd5l/view?usp=sharing)
-{:.lead style="margin-bottom: 0"}
-Katarzina Janocha, Alison Pouplin, Claire Higgins, Nick Linton and Anil Bharath
-{:.faded style="margin-bottom: 0"}
-Medical Imaging Summer School, 2018
-{: style="margin-top:0; margin-bottom:0"}
 
-Modelling the evolution of skin lesions over-time using a Bidirectional Generative Adversarial Network [\[Poster\]](https://drive.google.com/file/d/1CcR3yvZTdEth1oIe3YYLUV_BDi7pfjVR/view?usp=sharing) [\[Code\]](https://github.com/a-pouplin/thesis-code)
-{:.lead style="margin-bottom: 0"}
-Alison Pouplin, Antonia Creswell, and Anil Bharath
-{:.faded style="margin-bottom: 0"}
-BMVA special issue on Cancer, 2017
-{: style="margin-top:0; margin-bottom:0"} -->
+
+
+

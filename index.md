@@ -6,11 +6,13 @@ title: About
 Hi there!
 
 
-My name is Shruti Borkute, I am interested in the field of machine learning and physics, and want to apply my machine learning algorithms to solve the complex problems in particle physics. I am currently working as a freelancer in machine learning.
+My name is Shruti Borkute-Thengane, I am a senior research assistant at the Singapore University of Technology and Design, Singapore under Dr Malika in the Multi-Agent Robotics Vision and Learning(MARVL) Lab.
 
-I am currently working on particle jets classification and anomaly detection in high energy physics using machine learning. The projects are listed on the [project page](projects). 
+I am currently working on automated undocked ship hull assessment and inspection, enabling efficient pre-cleaning evaluation and post-cleaning verification to improve the speed, accuracy, and safety of maintenance operations. 
 
-I completed my Master and Bachelor in Physics from [Gondwana University](https://unigug.ac.in/) (Gadchiroli, India) with the master thesis titled "Hunting Exoplanets with Deep Learning".
+In the hull inspection process, we focus on mapping critical niche areas—such as the propeller, rudder, sea chest, and bilge keel—both before and after cleaning, and assess biofouling to quantify the extent of marine growth.
+
+I completed my Master and Bachelor in Physics from [Gondwana University](https://unigug.ac.in/) (Gadchiroli, India) with the master thesis titled "Determination of thermo-acoustical parameters of aqueous zinc sulphate at different temperatures".
 
 Follow me on below platforms to get latest updates on my work.
 
@@ -18,9 +20,9 @@ Follow me on below platforms to get latest updates on my work.
 <div class="body-social sidebar-social">
   <ul>
     <!-- <li> <a href="https://scholar.google.co.uk/citations?hl=en&amp;user=40lh_7kAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" title="Google Scholar" class="no-mark-external" target="_blank"> <span class="icon-googlescholar"></span> <span aria-hidden="true">Google Scholar </span><span class="sr-only">Abir Saha's Google Scholar page</span></a></li> -->
-    <li> <a href="https://twitter.com/shruti_borkute" title="Twitter" class="no-mark-external" target="_blank"> <span class="icon-twitter"></span> <span aria-hidden="true">Twitter </span><span class="sr-only">Vishal Thengane's Twitter profile</span></a></li>
-    <li> <a href="https://www.linkedin.com/in/shrutiborkute" title="LinkedIn" class="no-mark-external" target="_blank"> <span class="icon-linkedin2"></span> <span aria-hidden="true">LinkedIn </span><span class="sr-only">Vishal Thengane's LinkedIn profile</span></a></li>
-    <li> <a href="https://instagram.com/shruti_borkute" title="Instagram" class="no-mark-external" target="_blank"> <span class="icon-instagram"></span> <span aria-hidden="true">Instagram </span><span class="sr-only">Vishal Thengane's Instagram profile</span></a></li>
+    <li> <a href="https://twitter.com/shruti_borkute" title="Twitter" class="no-mark-external" target="_blank"> <span class="icon-twitter"></span> <span aria-hidden="true">Twitter </span><span class="sr-only">Shruti Thengane's Twitter profile</span></a></li>
+    <li> <a href="https://linkedin.com/in/shrutibt" title="LinkedIn" class="no-mark-external" target="_blank"> <span class="icon-linkedin2"></span> <span aria-hidden="true">LinkedIn </span><span class="sr-only">Shruti Thengane's LinkedIn profile</span></a></li>
+    <li> <a href="https://www.instagram.com/_shruti.bt/" title="Instagram" class="no-mark-external" target="_blank"> <span class="icon-instagram"></span> <span aria-hidden="true">Instagram </span><span class="sr-only">Shruti Thengane's Instagram profile</span></a></li>
   </ul>
 </div>
 <!-- ![Profile picture](assets/icons/icon.jpg){: align="center" width="512px" srcset="/assets/icons/icon.jpg"} -->

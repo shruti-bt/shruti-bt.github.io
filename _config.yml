@@ -22,15 +22,15 @@ lang:                  en
 title:                Shruti Borkute
 
 # A short description (~150 chars) of the page used for the meta description tag.
-# Can use markdown, but no more than one paragraph (enforced by `>`)
+# Can use markdown, but no more than one paragraph (enforced by `>`)Senior Research Assistant in Marine Exploration
 description:           >
-  Particle physics and machine learning enthusiast
+  Senior Research Assistant in Marine Exploration
 
 # A shorter description for the sidebar.
 tagline:              ''
 
 # A list of keywords for your blog
-keywords:              [Shruti, Borkute, Particle, Physics, Machine, Learning]
+keywords:              [Shruti, Borkute, Particle, Physics, Machine, Learning, Robotics, Computer, Vision, Underwater, Exploration]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -44,7 +44,7 @@ author:
   # Used by `jekyll-seo-tag`:
   twitter:             shruti_borkute
   github:              shruti-bt
-  # linkedin:            shruti_borkute
+  linkedin:            https://linkedin.com/in/shrutibt
 
 # Add links to the sidebar.
 menu:
@@ -309,7 +309,7 @@ social:
   links:
     - https://twitter.com/shruti_borkute
     - https://github.com/shruti-bt
-    # - https://instagram.com/shruti_borkute
+    - https://www.instagram.com/_shruti.bt/
 
 
 # Other Plugins
