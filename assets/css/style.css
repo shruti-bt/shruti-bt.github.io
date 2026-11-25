@@ -529,7 +529,7 @@ p {
 /* ==========================================================================
    News
    ========================================================================== */
-/* Scrollable box: js/main.js sizes it to show the first 7 items; the rest scroll */
+/* Scrollable box: assets/js/main.js sizes it to show the first 7 items; the rest scroll */
 .news-scroll {
     max-height: 32rem;                    /* fallback if JavaScript is off */
     overflow-y: auto;
