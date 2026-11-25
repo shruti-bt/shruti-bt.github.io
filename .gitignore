@@ -8,9 +8,12 @@ node_modules/
 # To publish it later, delete these lines and commit.
 content/gallery.md
 assets/img/gallery/
-gallery.html
-template-gallery.html
+gallery/
+templates/gallery.html
 gallery-check.jpg
+
+# my own checklist of open items (not published)
+TODO.md
 
 # downloaded photo bundles
 drive-download-*/

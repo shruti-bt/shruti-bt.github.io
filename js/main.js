@@ -14,7 +14,7 @@ function updateNav() {
     }
 
     var current = null;
-    var ids = ['work', 'news', 'publications', 'gallery'].filter(function (id) {
+    var ids = ['news', 'publications', 'gallery'].filter(function (id) {
         return document.getElementById(id);
     });
     ids.forEach(function (id) {

@@ -550,78 +550,13 @@ p {
 }
 
 /* ==========================================================================
-   Selected Work
-   ========================================================================== */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: border-color 0.2s;
-}
-
-.project:hover {
-    border-color: var(--underline);
-}
-
-.project img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-    border-bottom: 1px solid var(--line);
-}
-
-.project-body {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 1rem 1.1rem 1.05rem;
-}
-
-.project-label {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--accent);
-    margin-bottom: 0.35rem;
-}
-
-.project h3 {
-    font-family: var(--font-serif);
-    font-size: 1.08rem;
-    font-weight: 500;
-    line-height: 1.3;
-    margin-bottom: 0.45rem;
-}
-
-.project p {
-    font-size: 0.9rem;
-    line-height: 1.55;
-    margin-bottom: 0.8rem;
-}
-
-.project .pub-links {
-    margin-top: auto;
-}
-
-/* ==========================================================================
    News
    ========================================================================== */
 /* Scrollable box: js/main.js sizes it to show the first 7 items; the rest scroll */
 .news-scroll {
     max-height: 32rem;                    /* fallback if JavaScript is off */
     overflow-y: auto;
-    padding: 0.25rem 0.5rem 0.25rem 7px;  /* left room for the timeline dots */
+    padding: 0.25rem 0.5rem 0.25rem 14px;  /* left room for the timeline dots (and their hover ring) */
     scrollbar-width: thin;
     scrollbar-color: var(--line) transparent;
 }
@@ -674,12 +609,19 @@ p {
     background: var(--bg);
     border: 2px solid var(--text-meta);
     border-radius: 50%;
-    transition: border-color 0.2s, background-color 0.2s;
+    transition: transform 0.2s, border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 
+/* hovering an item makes its dot pop: a little bigger, filled, with a soft ring */
 .news-item:hover::before {
+    transform: scale(1.3);
     border-color: var(--accent);
-    background: var(--highlight);
+    background: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-tint);
+}
+
+.news-item:hover .news-date {
+    color: var(--accent);
 }
 
 .news-date {
@@ -742,25 +684,6 @@ p {
     font-style: italic;
     line-height: 1.45;
     margin-top: 0;
-}
-
-.pub-tech {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0.2rem;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    color: var(--text-meta);
-}
-
-.pub-tech li {
-    white-space: nowrap;
-}
-
-.pub-tech li + li::before {
-    content: "·";
-    margin: 0 0.4rem;
 }
 
 .pub-links {
@@ -886,10 +809,6 @@ footer strong {
         gap: 0.1rem;
     }
 
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem 0.75rem;
@@ -937,46 +856,6 @@ footer strong {
     cursor: pointer;
 }
 
-.gallery-jump {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-bottom: 0.5rem;
-}
-
-.gallery-jump a {
-    font-size: 0.82rem;
-    text-decoration: none;
-    color: var(--text-secondary);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 0.2rem 0.75rem;
-    transition: color 0.15s, border-color 0.15s;
-}
-
-.gallery-jump a:hover {
-    color: var(--accent);
-    border-color: var(--underline);
-}
-
-.gallery-group h2 {
-    margin: 3rem 0 0.25rem;
-    padding-bottom: 0;
-    border-bottom: none;
-}
-
-.gallery-meta {
-    font-family: var(--font-mono);
-    font-size: 0.74rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-meta);
-    margin-bottom: 1rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 1px solid var(--line);
-    max-width: none;
-}
-
 /* Publications / Patents tabs: they sit where the section heading was */
 .section-tabs {
     display: flex;
@@ -1015,42 +894,8 @@ footer strong {
 
 /* Gallery page: justified rows. Photos in a row share one height and fill the
    width exactly, whatever their shape and however many an event has. */
-.gallery-grid.gallery-rows {
-    --row-h: clamp(120px, 16vw, 200px);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    columns: auto;
-}
 
 /* keeps the last row from stretching a lone photo across the page */
-.gallery-grid.gallery-rows::after {
-    content: "";
-    flex-grow: 1000000;
-}
-
-.gallery-rows .gallery-item {
-    flex-grow: var(--r);
-    flex-basis: calc(var(--r) * var(--row-h));
-    max-width: calc(var(--r) * var(--row-h) * 1.6);
-    margin: 0;
-}
-
-.gallery-rows .gallery-open img {
-    aspect-ratio: var(--r);
-    height: auto;
-}
-
-@media (max-width: 600px) {
-    .gallery-grid.gallery-rows {
-        --row-h: 88px;
-        gap: 0.35rem;
-    }
-
-    .gallery-rows .gallery-item {
-        max-width: calc(var(--r) * var(--row-h) * 2.6);
-    }
-}
 
 /* Research highlights under the role line */
 .highlights {

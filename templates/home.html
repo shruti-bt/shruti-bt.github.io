@@ -2,8 +2,8 @@
 <html lang="en">
 
 <!--
-    This is the page layout. The words in {{double braces}} are filled in by build.py
-    from the files in content/. To change text, edit content/*.md, not this file.
+    Layout of the home page (index.html). The words in {{double braces}} are filled in
+    by build.py from the files in content/. To change text, edit content/*.md, not this file.
 -->
 
 <head>
@@ -48,7 +48,6 @@
             <a href="#" class="nav-brand">{{name_nobreak}}</a>
             <div class="nav-right">
             <div class="nav-links">
-                <a href="#work" class="nav-item">Work</a>
                 <a href="#news" class="nav-item">News</a>
                 <a href="#publications" class="nav-item">Publications</a>
                 <a href="#gallery" class="nav-item">Gallery</a>
@@ -78,13 +77,6 @@
 {{links}}
             </ul>
         </header>
-
-        <section id="work">
-            <h2>Selected Work</h2>
-            <div class="project-grid">
-{{projects}}
-            </div>
-        </section>
 
         <section id="news">
             <h2>News &amp; Highlights</h2>

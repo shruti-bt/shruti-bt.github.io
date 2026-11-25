@@ -20,7 +20,6 @@ skill: Tools | Linux, Git
 service: Reviewer for ICRA (2023 to 2026) and IROS (2023)
 
 analytics:
-show_projects: no
 ---
 
 <!--
@@ -31,7 +30,6 @@ HOW TO EDIT
   (the link is optional: #publications, #patents or any https:// address).
 - Skills & Service (bottom of the page): one  skill: Group | item, item  line per row,
   and one  service:  line. Delete the lines to hide them.
-- show_projects: yes shows the Selected Work cards from projects.md. no hides them.
 - analytics: your GoatCounter code (e.g. shruti-bt) to count visitors. Empty = off.
 - Below that, write normal paragraphs separated by a blank line.
   The FIRST paragraph is shown larger, as the intro line.
