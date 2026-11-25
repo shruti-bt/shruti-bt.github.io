@@ -1,4 +1,4 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
@@ -12,34 +12,23 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      LANG: en_US.UTF-8
-      LC_ALL: en_US.UTF-8
-
     steps:
       - uses: actions/checkout@v4
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - run: bundle install
-
-      - run: bundle exec jekyll build
+      # Turn content/*.md into index.html (standard library only, nothing to install)
+      - name: Build site
+        run: python3 build.py
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: .
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
