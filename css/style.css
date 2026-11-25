@@ -21,27 +21,8 @@
     color-scheme: light;
 }
 
-/* Dark mode: follows the visitor's system setting, unless they pick one
-   with the sun/moon button (stored as data-theme on <html>) */
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        --bg: #181715;
-        --surface: #211F1C;
-        --text-main: #EDE8DF;
-        --text-secondary: #BDB6AA;
-        --text-meta: #8E877C;
-        --accent: #E0915F;
-        --accent-dark: #F0AE84;
-        --accent-tint: #2C221B;
-        --line: #36322C;
-        --underline: #6B4A33;
-        --highlight: #4A3424;
-        --button-bg: #1E1C19;
-        --on-accent: #181715;
-        color-scheme: dark;
-    }
-}
-
+/* Dark mode: light is the default; the sun/moon button switches to dark
+   (stored as data-theme="dark" on <html> and remembered) */
 :root[data-theme="dark"] {
     --bg: #181715;
     --surface: #211F1C;
@@ -202,10 +183,6 @@ nav.is-scrolled .nav-brand {
 .theme-toggle .icon-sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
-    :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
-}
 
 .nav-item:hover,
 .nav-item.active {
