@@ -68,8 +68,8 @@ and commit.
 python3 build.py
 ```
 
-Then open `index.html` in your browser. (`build.py` needs no installs. `index.html` is not saved in git:
-GitHub runs `build.py` on every push, so this step is only for previewing.)
+Then open `index.html` in your browser. (`build.py` needs no installs. GitHub runs it on every push, so this step is only
+for previewing.)
 
 ## Files
 
@@ -81,6 +81,6 @@ build.py              ← turns content/ + templates/ into the pages below
 assets/css/style.css  ← colours, fonts, spacing (theme variables at the top)
 assets/js/main.js     ← tabs, BibTeX, sticky menu, dark mode, gallery filters
 assets/img/           ← profile photo, share card and gallery photos
-index.html            ← GENERATED home page (not saved in git; GitHub builds it)
+index.html            ← GENERATED home page, do not edit by hand
 gallery/index.html    ← GENERATED Gallery page (only when there are photos)
 ```
