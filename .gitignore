@@ -3,3 +3,15 @@
 _site/
 node_modules/
 *.log
+
+# Gallery: kept on this computer only until the photos are cleared for sharing.
+# To publish it later, delete these lines and commit.
+content/gallery.md
+assets/img/gallery/
+gallery.html
+template-gallery.html
+gallery-check.jpg
+
+# downloaded photo bundles
+drive-download-*/
+*.zip
