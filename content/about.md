@@ -37,10 +37,8 @@ HOW TO EDIT
 - **bold**, *italic* and [link text](https://...) all work.
 -->
 
-I build **embodied AI** that lets robots perceive, decide and act in the messy real world.
+I am a robotics and machine learning researcher at SUTD's [MARVL Lab](https://www.malikameghjani.com/copy-of-home), working with [Dr. Malika Meghjani](https://www.malikameghjani.com/) to build autonomous marine robots for ship hull inspection and coral reef monitoring in Singapore's waters.
 
-Since 2023, I have been a Senior Research Assistant at the [MARVL Lab](https://www.malikameghjani.com/copy-of-home), SUTD, with [Dr. Malika Meghjani](https://www.malikameghjani.com/), building robots for ship hull inspection and coral reef monitoring in Singapore's waters. I develop **vision-language models** that decide what to capture from a text prompt, **3D scene graphs** for open-ended tasks, and **navigation, collision avoidance and trajectory planning** for an autonomous survey vessel. I integrate them on **ROS 2**, prune and quantise models to run in real time on board, and test them in the field.
+I work on **vision-language models**, **3D scene graphs**, and **navigation and trajectory planning** for autonomous vessels. I run them on the robots' own onboard hardware with **ROS 2** and test them at sea. Before SUTD, I worked on machine learning for IoT systems at [UAE University](https://www.uaeu.ac.ae/) and on applied computer vision projects. I hold a master's degree in Physics and a bachelor's degree in Physics, Mathematics and Computer Science from [Gondwana University](https://unigug.ac.in/).
 
-Before that, I applied machine learning to IoT systems at [United Arab Emirates University](https://www.uaeu.ac.ae/) and worked as a freelance data scientist. I hold a BSc in Physics, Mathematics and Computer Science and an MSc in Physics from [Gondwana University](https://unigug.ac.in/).
-
-> I am currently open to **research engineer roles in embodied AI and robotics**, from model development to real-world deployment. Feel free to [get in touch](mailto:shruti.borkute312@gmail.com).
+> I am currently open to **Robotics and AI Research Engineer roles**, taking models from training to real-world deployment. Feel free to [get in touch](mailto:shruti.borkute312@gmail.com).

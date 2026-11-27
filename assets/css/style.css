@@ -219,6 +219,11 @@ h2 {
     border-bottom: 1px solid var(--line);
 }
 
+/* no single word left alone on the last line of a paragraph */
+p, li, dd, blockquote, figcaption {
+    text-wrap: pretty;
+}
+
 p {
     color: var(--text-secondary);
     margin-bottom: 1rem;
