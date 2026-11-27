@@ -883,35 +883,62 @@ footer strong {
 /* keeps the last row from stretching a lone photo across the page */
 
 /* Research highlights under the role line */
+/* research areas under the role: quiet small caps, dots between */
+.focus-line {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.35rem;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-meta);
+}
+
+.focus-line li {
+    white-space: nowrap;
+}
+
+.focus-line li:not(:last-child)::after {
+    content: "·";
+    margin: 0 0.5rem;
+}
+
 .highlights {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0.55rem;
-    font-size: 0.92rem;
-    font-weight: 500;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
 }
 
-.highlights li {
-    white-space: nowrap;
-}
-
-/* the dot belongs to the item before it, so a wrapped line never starts with one */
-.highlights li:not(:last-child)::after {
-    content: "·";
-    margin: 0 0.55rem;
-    color: var(--text-meta);
-    font-weight: 400;
-}
-
+/* outlined buttons with a small icon, like a project page's arXiv / PDF buttons */
 .highlights a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--button-bg);
     color: var(--text-main);
-    text-decoration-color: var(--line);
+    font-size: 0.88rem;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.highlights svg {
+    width: 1rem;
+    height: 1rem;
+    color: var(--accent);
 }
 
 .highlights a:hover {
+    border-color: var(--accent);
     color: var(--accent);
-    text-decoration-color: currentColor;
 }
 
 /* ==========================================================================

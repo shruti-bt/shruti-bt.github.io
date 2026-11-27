@@ -143,12 +143,33 @@ def render_links(links):
     return [f"<li>{link_tag(html.escape(label), html.escape(url))}</li>" for label, url in links]
 
 
+def render_focus(focus):
+    """Research areas under the role: 'focus: A | B | C' becomes 'A · B · C'."""
+    areas = [a.strip() for a in focus.split("|") if a.strip()]
+    if not areas:
+        return []
+    items = "".join(f"<li>{inline(a)}</li>" for a in areas)
+    return [f'<ul class="focus-line" aria-label="Research areas">{items}</ul>']
+
+
+# small outline icons for the header buttons, picked by where the button links to
+ICONS = {
+    "#publications": '<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>',
+    "#patents": '<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>',
+    "default": '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
+}
+
+
 def render_highlights(highlights):
+    """Outlined buttons under the role: 'highlight: Label | #link'."""
     if not highlights:
         return []
     items = []
     for label, url in highlights:
-        text = inline(label)
+        icon = ICONS.get(url, ICONS["default"])
+        svg = (f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+               f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{icon}</svg>')
+        text = svg + inline(label)
         items.append(f"    <li>{link_tag(text, html.escape(url)) if url else text}</li>")
     return ['<ul class="highlights" aria-label="Research highlights">'] + items + ["</ul>"]
 
@@ -431,6 +452,7 @@ def main():
         "name_nobreak": html.escape(s["name"]).replace("-", "&#8209;"),  # surname never splits
         "role": inline(s["role"]),
         "photo": html.escape(s["photo"]),
+        "focus": indent(render_focus(s.get("focus", "")), 20),
         "highlights": indent(render_highlights(about["highlights"]), 20),
         "about": indent(about["bio"], 16),
         "links": indent(render_links(about["links"]), 16),

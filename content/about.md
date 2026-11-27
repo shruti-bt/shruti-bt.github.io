@@ -2,10 +2,10 @@
 name: Shruti Borkute-Thengane
 role: Senior Research Assistant, [MARVL Lab](https://www.malikameghjani.com/copy-of-home), [SUTD](https://www.sutd.edu.sg/)
 photo: assets/img/profile.jpg
+focus: Embodied AI | Computer Vision | Marine Robotics | Edge AI
 
-highlight: Nature Communications 2026 | #publications
-highlight: ICRA 2025 | #publications
-highlight: 2 patents filed | #patents
+highlight: Publications | #publications
+highlight: Patents | #patents
 
 link: Email | mailto:shruti.borkute312@gmail.com
 link: Google Scholar | https://scholar.google.com/citations?user=KX8xFZ0AAAAJ&hl=en
@@ -26,6 +26,7 @@ analytics:
 HOW TO EDIT
 - The settings between the two --- lines fill in the header.
   Add a CV later with a line like:  link: CV | assets/cv.pdf
+- focus: Area | Area | Area  is the line of research areas under your role.
 - highlight: Label | #link  adds an item to the short line under your role
   (the link is optional: #publications, #patents or any https:// address).
 - Skills & Service (bottom of the page): one  skill: Group | item, item  line per row,
