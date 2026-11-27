@@ -12,6 +12,7 @@ GitHub Actions runs this automatically before every deploy.
 """
 
 import datetime
+import hashlib
 import html
 import json
 import re
@@ -167,7 +168,8 @@ def render_highlights(highlights):
     items = []
     for label, url in highlights:
         icon = ICONS.get(url, ICONS["default"])
-        svg = (f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+        # width/height keep the icon small even if the stylesheet fails to load
+        svg = (f'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" '
                f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{icon}</svg>')
         text = svg + inline(label)
         items.append(f"    <li>{link_tag(text, html.escape(url)) if url else text}</li>")
@@ -429,9 +431,18 @@ def head_extra(about):
     return lines
 
 
+def asset_version(rel):
+    """A short fingerprint of a file's contents. Added to its link as ?v=..., so browsers
+    fetch the new copy as soon as the file changes instead of showing an old cached one."""
+    return hashlib.sha1((ROOT / rel).read_bytes()).hexdigest()[:8]
+
+
 def read_template(name):
     text = (TEMPLATES / name).read_text(encoding="utf-8")
-    return re.sub(r"\n<!--\s*\n.*?-->\n", "\n", text, count=1, flags=re.S)  # drop the note at the top
+    text = re.sub(r"\n<!--\s*\n.*?-->\n", "\n", text, count=1, flags=re.S)  # drop the note at the top
+    for rel in ("assets/css/style.css", "assets/js/main.js"):
+        text = text.replace(f'{rel}"', f'{rel}?v={asset_version(rel)}"')
+    return text
 
 
 # --------------------------------------------------------------------------
