@@ -161,7 +161,7 @@ ICONS = {
 
 
 def render_highlights(highlights):
-    """Outlined buttons under the role: 'highlight: Label | #link'."""
+    """Top results under the role: 'highlight: Label | #link', shown as rust text with an icon."""
     if not highlights:
         return []
     items = []
