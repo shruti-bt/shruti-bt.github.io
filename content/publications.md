@@ -21,7 +21,7 @@ tag: To appear
 tag: Patent filed
 
 ## Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks
-authors: Marcel Bartholomeus Prasetyo\*, **Shrutika Thengane**\*, A Manicka Praveen, Yi Loo, [Malika Meghjani](https://www.malikameghjani.com/)
+authors: Marcel Bartholomeus Prasetyo\*, **Shrutika Thengane**\*, A Manicka Praveen\*, Yi Loo, [Malika Meghjani](https://www.malikameghjani.com/)
 venue: arXiv preprint, 2026
 paper: https://arxiv.org/abs/2605.31067
 
