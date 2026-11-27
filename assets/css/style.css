@@ -73,6 +73,9 @@ body {
     max-width: 720px;
     margin: 0 auto;
     padding: 0 1.5rem 3rem;
+    /* Safari paints a multi-line selection out to the nearest positioned box;
+       without this the highlight runs across the whole window */
+    position: relative;
 }
 
 /* ==========================================================================
