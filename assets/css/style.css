@@ -668,7 +668,7 @@ p {
 .pub-authors b,
 .pub-authors strong {
     color: var(--text-main);
-    font-weight: 600;
+    font-weight: 500;  /* your name: a touch heavier than the others, not louder than the title */
 }
 
 .pub-venue {
