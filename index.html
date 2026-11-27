@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Figtree:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=e38a6924">
+    <link rel="stylesheet" href="assets/css/style.css?v=266237b9">
     <script>
         // apply a saved light/dark choice before the page draws (no flash)
         try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
@@ -128,6 +128,10 @@
                         <span class="news-content">Our paper <em>Murky-CHARM: Coral Health Assessment using Robots in Murky Environments</em> was accepted to <strong>Nature Communications</strong>.</span>
                     </li>
                     <li class="news-item">
+                        <span class="news-date">May 2026</span>
+                        <span class="news-content">Our preprint <a href="https://arxiv.org/abs/2605.31067" target="_blank" rel="noopener">Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks</a> is out on <strong>arXiv</strong>.</span>
+                    </li>
+                    <li class="news-item">
                         <span class="news-date">Apr 2026</span>
                         <span class="news-content">Presented poster <em>Automated Ship Hull Inspection</em> at <strong>Singapore Maritime Week 2026</strong>.</span>
                     </li>
@@ -165,12 +169,32 @@
                 <button type="button" role="tab" id="tab-patents" aria-controls="panel-patents" aria-selected="false" tabindex="-1">Patents</button>
             </div>
             <div id="panel-publications" role="tabpanel" aria-labelledby="tab-publications">
+                <p class="pub-note"><sup>*</sup> Equal contribution</p>
                 <article class="pub">
                     <h3>Murky-CHARM: Coral Health Assessment using Robots in Murky Environments</h3>
+                    <div class="pub-authors">Yu Xiang Tan, Marcel Bartholomeus Prasetyo, <strong>Shrutika Thengane</strong>, Jun Jie Hoo, <a href="https://www.malikameghjani.com/" target="_blank" rel="noopener">Malika Meghjani</a>, Sam Shu Qin</div>
                     <div class="pub-venue">Nature Communications, 2026</div>
                     <div class="pub-links">
                         <span class="pub-tag">To appear</span>
                         <span class="pub-tag">Patent filed</span>
+                    </div>
+                </article>
+
+                <article class="pub">
+                    <h3>Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks</h3>
+                    <div class="pub-authors">Marcel Bartholomeus Prasetyo<sup>*</sup>, <strong>Shrutika Thengane</strong><sup>*</sup>, A Manicka Praveen, Yi Loo, <a href="https://www.malikameghjani.com/" target="_blank" rel="noopener">Malika Meghjani</a></div>
+                    <div class="pub-venue">arXiv preprint, 2026</div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2605.31067" target="_blank" rel="noopener">Paper</a>
+                        <button type="button" data-bibtex="prasetyo2026seeing">BibTeX</button>
+                    </div>
+                    <div id="bib_prasetyo2026seeing" class="bibtex" hidden>
+                        <pre>@article{prasetyo2026seeing,
+  title={Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks},
+  author={Prasetyo, Marcel Bartholomeus and Thengane, Shrutika and Praveen, A Manicka and Loo, Yi and Meghjani, Malika},
+  journal={arXiv preprint arXiv:2605.31067},
+  year={2026}
+}</pre>
                     </div>
                 </article>
 

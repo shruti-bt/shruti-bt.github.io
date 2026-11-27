@@ -49,10 +49,11 @@ def link_tag(label, url):
 def inline(text):
     """Convert inline Markdown to HTML. The text is HTML-escaped first."""
     s = html.escape(text.strip(), quote=True)
+    s = s.replace("\\*", "\x00")  # \* is a plain asterisk, e.g. an equal-contribution mark
     s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", lambda m: link_tag(m.group(1), m.group(2)), s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"(?<![\*\w])\*(?!\s)(.+?)(?<!\s)\*(?![\*\w])", r"<em>\1</em>", s)
-    return s
+    return s.replace("\x00", "<sup>*</sup>")
 
 
 def plain(text):
@@ -453,6 +454,8 @@ def main():
     news = parse_news(CONTENT / "news.md")
     pubs = parse_publications(CONTENT / "publications.md")
     patents = parse_publications(CONTENT / "patents.md")
+    if any("<sup>*</sup>" in line for line in pubs):  # one key for the equal-contribution star, above the list
+        pubs = ['<p class="pub-note"><sup>*</sup> Equal contribution</p>'] + pubs
     pub_heading, patents_panel = render_pub_section(pubs, patents)
     skills = render_skills(about["skills"], s.get("service", "").strip())
     events = parse_gallery(CONTENT / "gallery.md")

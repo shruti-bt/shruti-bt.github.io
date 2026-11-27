@@ -7,6 +7,7 @@ HOW TO EDIT
 -->
 
 - Nov 2026 | Our paper *Murky-CHARM: Coral Health Assessment using Robots in Murky Environments* was accepted to **Nature Communications**.
+- May 2026 | Our preprint [Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks](https://arxiv.org/abs/2605.31067) is out on **arXiv**.
 - Apr 2026 | Presented poster *Automated Ship Hull Inspection* at **Singapore Maritime Week 2026**.
 - Mar 2026 | Filed a Singapore provisional patent for **MERLION**.
 - Feb 2026 | Filed a Singapore provisional patent for **Murky-CHARM**.

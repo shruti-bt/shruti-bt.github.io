@@ -2,7 +2,8 @@
 HOW TO EDIT
 - Each paper starts with a line beginning with ##  (the title). Newest first.
 - Then any of these lines:
-    authors: ...           your name in **bold**, [links](https://...) allowed
+    authors: ...           your name in **bold**, [links](https://...) allowed,
+                           \* after a name for equal contribution (the key is shown once, above the list)
     venue: ...
     tech: ...              comma-separated methods and tools, shown as chips (max 4)
     tag: ...               a small grey label, e.g. Poster or a patent number
@@ -12,11 +13,26 @@ HOW TO EDIT
 - To add a paper, copy a whole block (from ## down to the closing ```).
 -->
 
-<!-- TODO: add the authors line (in order), check the exact title, and add paper: and bibtex once it is online -->
+<!-- TODO: add paper: and bibtex once it is online -->
 ## Murky-CHARM: Coral Health Assessment using Robots in Murky Environments
+authors: Yu Xiang Tan, Marcel Bartholomeus Prasetyo, **Shrutika Thengane**, Jun Jie Hoo, [Malika Meghjani](https://www.malikameghjani.com/), Sam Shu Qin
 venue: Nature Communications, 2026
 tag: To appear
 tag: Patent filed
+
+## Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks
+authors: Marcel Bartholomeus Prasetyo\*, **Shrutika Thengane**\*, A Manicka Praveen, Yi Loo, [Malika Meghjani](https://www.malikameghjani.com/)
+venue: arXiv preprint, 2026
+paper: https://arxiv.org/abs/2605.31067
+
+```bibtex
+@article{prasetyo2026seeing,
+  title={Seeing Fast and Slow: Bimodal 3D Scene Graphs for Open-set Tasks},
+  author={Prasetyo, Marcel Bartholomeus and Thengane, Shrutika and Praveen, A Manicka and Loo, Yi and Meghjani, Malika},
+  journal={arXiv preprint arXiv:2605.31067},
+  year={2026}
+}
+```
 
 ## MERLION: Marine ExploRation with Language guIded Online iNformative Visual Sampling and Enhancement
 authors: **Shrutika Thengane**, Marcel Bartholomeus Prasetyo, Yu Xiang Tan, [Malika Meghjani](https://www.malikameghjani.com/)
